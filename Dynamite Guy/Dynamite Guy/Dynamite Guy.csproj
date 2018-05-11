@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{466F785F-1BA9-411F-9DBC-E44A5F9F1CF6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dynamite_Guy</RootNamespace>
+    <AssemblyName>Dynamite Guy</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Music\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Bomb\dynamite2.png" />
+    <Content Include="Images\Bomb\dynamite3.png" />
+    <Content Include="Images\Bomb\dynamite4.png" />
+    <Content Include="Images\Bomb\dynamite5.png" />
+    <Content Include="Images\Player\01.gif" />
+    <Content Include="Images\Player\02.gif" />
+    <Content Include="Images\Player\03.gif" />
+    <Content Include="Images\Player\04.gif" />
+    <Content Include="Images\Player\05.gif" />
+    <Content Include="Images\Player\11.gif" />
+    <Content Include="Images\Player\12.gif" />
+    <Content Include="Images\Player\13.gif" />
+    <Content Include="Images\Player\14.gif" />
+    <Content Include="Images\Player\15.gif" />
+    <Content Include="Images\Player\21.gif" />
+    <Content Include="Images\Player\22.gif" />
+    <Content Include="Images\Player\23.gif" />
+    <Content Include="Images\Player\24.gif" />
+    <Content Include="Images\Player\25.gif" />
+    <Content Include="Images\Player\31.gif" />
+    <Content Include="Images\Player\32.gif" />
+    <Content Include="Images\Player\33.gif" />
+    <Content Include="Images\Player\34.gif" />
+    <Content Include="Images\Player\35.gif" />
+    <Content Include="Images\Player\41.gif" />
+    <Content Include="Images\Player\42.gif" />
+    <Content Include="Images\Player\43.gif" />
+    <Content Include="Images\Player\44.gif" />
+    <Content Include="Images\Player\45.gif" />
+    <None Include="Resources\color-gradient-wallpaper-41.jpg" />
+    <None Include="Resources\thai-tradition-old-paper-text-background-19706509.jpg" />
+    <None Include="Resources\super-bomberman-usa.new.png" />
+    <None Include="Resources\rotate.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\color-gradient-wallpaper-4.jpg" />
+    <None Include="Resources\bomberman_logo_by_bloodsoft-d8aajw3.png" />
+    <None Include="Resources\078688f2-04a7-47d1-a486-718a5858d26f.png" />
+    <None Include="Resources\731b1171-b649-4f1b-a373-49a275136ba41.png" />
+    <None Include="Resources\731b1171-b649-4f1b-a373-49a275136ba4.png" />
+    <None Include="Resources\7bf1c068e661fda36867506ac7d21e00--red-background-stripes.jpg" />
+    <None Include="Resources\ezgif.com-gif-maker %283%29.gif" />
+    <None Include="Resources\LIFE.gif" />
+    <None Include="Resources\upBoss.png" />
+    <None Include="Resources\rightBoss.png" />
+    <None Include="Resources\leftBoss.png" />
+    <None Include="Resources\downBoss.png" />
+    <None Include="Resources\downGREEN1.png" />
+    <None Include="Resources\upGREEN.png" />
+    <None Include="Resources\rightGREEN.png" />
+    <None Include="Resources\leftGREEN.png" />
+    <None Include="Resources\downGREEN.png" />
+    <None Include="Resources\upEnemy.png" />
+    <None Include="Resources\rightEnemy.png" />
+    <None Include="Resources\leftEnemy.png" />
+    <None Include="Resources\downEnemy.png" />
+    <None Include="Resources\upRED.png" />
+    <None Include="Resources\rightRED.png" />
+    <None Include="Resources\leftRED.png" />
+    <None Include="Resources\downRED.png" />
+    <None Include="Resources\up.png" />
+    <None Include="Resources\right.png" />
+    <None Include="Resources\left.png" />
+    <None Include="Resources\down.png" />
+    <None Include="Resources\preview-soldier.gif" />
+    <None Include="Resources\ezgif.com-gif-maker %282%29.gif" />
+    <None Include="Resources\ezgif.com-gif-maker %281%29.gif" />
+    <None Include="Resources\00.png" />
+    <None Include="Resources\Webp.net-gifmaker %283%29.gif" />
+    <None Include="Resources\Webp.net-gifmaker %282%291.gif" />
+    <None Include="Resources\Webp.net-gifmaker1.gif" />
+    <None Include="Resources\Webp.net-gifmaker %282%29.gif" />
+    <None Include="Resources\Webp.net-gifmaker.gif" />
+    <None Include="Resources\Webp.net-gifmaker %281%29.gif" />
+    <None Include="Resources\graphics-bombs-934360.gif" />
+    <None Include="Resources\BomberManEffect1.png" />
+    <None Include="Resources\BomberManEffect.png" />
+    <None Include="Resources\graphics-bombs-413112 %281%29.gif" />
+    <None Include="Resources\grass03.png" />
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
