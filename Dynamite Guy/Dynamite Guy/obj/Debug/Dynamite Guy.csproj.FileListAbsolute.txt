@@ -67,3 +67,21 @@ D:\Dynamite Guy\Dynamite Guy\obj\Debug\Dynamite_Guy.Form4.resources
 D:\Dynamite Guy\Dynamite Guy\obj\Debug\Dynamite_Guy.Form5.resources
 D:\Dynamite Guy\Dynamite Guy\obj\Debug\Dynamite_Guy.Properties.Resources.resources
 D:\Dynamite Guy\Dynamite Guy\obj\Debug\Dynamite Guy.csproj.GenerateResource.Cache
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\bin\Debug\Dynamite Guy.exe.config
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\obj\Debug\Interop.WMPLib.dll
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\obj\Debug\Dynamite Guy.csproj.ResolveComReference.cache
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\obj\Debug\Dynamite Guy.exe
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\obj\Debug\Dynamite Guy.pdb
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\bin\Debug\Dynamite Guy.exe
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\bin\Debug\Dynamite Guy.pdb
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\bin\Debug\Interop.WMPLib.dll
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\obj\Debug\Dynamite Guy.csprojResolveAssemblyReference.cache
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\obj\Debug\Dynamite_Guy.Form1.resources
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\obj\Debug\Dynamite_Guy.Form2.resources
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\obj\Debug\Dynamite_Guy.Form3.resources
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\obj\Debug\Dynamite_Guy.Form4.resources
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\obj\Debug\Dynamite_Guy.Form5.resources
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\obj\Debug\Dynamite_Guy.Properties.Resources.resources
+C:\Users\Moiz\Documents\GitHub\Developers-void\Dynamite Guy\Dynamite Guy\obj\Debug\Dynamite Guy.csproj.GenerateResource.Cache

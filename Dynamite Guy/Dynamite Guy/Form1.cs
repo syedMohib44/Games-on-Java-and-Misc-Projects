@@ -38,7 +38,7 @@ namespace Dynamite_Guy
         }
         public void life()
         {
-            if ((P1.Bounds.IntersectsWith(enemy1.Bounds) && enemy1.Visible == true) || (P1.Bounds.IntersectsWith(enemy2.Bounds) && enemy2.Visible == true) || (P1.Bounds.IntersectsWith(enemy3.Bounds) && enemy3.Visible == true) || (P1.Bounds.IntersectsWith(enemy4.Bounds) && enemy4.Visible == true) || (P1.Bounds.IntersectsWith(enemy5.Bounds) && enemy5.Visible == true))
+            if ( (P1.Bounds.IntersectsWith(enemy1.Bounds) && enemy1.Visible == true) || (P1.Bounds.IntersectsWith(enemy2.Bounds) && enemy2.Visible == true) || (P1.Bounds.IntersectsWith(enemy3.Bounds) && enemy3.Visible == true) || (P1.Bounds.IntersectsWith(enemy4.Bounds) && enemy4.Visible == true) || (P1.Bounds.IntersectsWith(enemy5.Bounds) && enemy5.Visible == true))
             {
                 if (i == 1)
                 {
@@ -59,23 +59,12 @@ namespace Dynamite_Guy
                     Form home = new Form2();
                     this.Hide();
                     home.Show();
+                    player.controls.stop();
                 }
                 i++;
             }
         }
-
-        public void p1dead()
-        {
-            if ((P1.Bounds.IntersectsWith(explosion1.Bounds) && explosion1.Visible) || (P1.Bounds.IntersectsWith(explosion2.Bounds) && explosion2.Visible) || (P1.Bounds.IntersectsWith(explosion3.Bounds) && explosion3.Visible) || (P1.Bounds.IntersectsWith(explosion4.Bounds) && explosion4.Visible))
-            {
-                P1.Visible = false;
-                stopall();
-                MessageBox.Show("YOU SUCK!");
-                Form home = new Form2();
-                this.Hide();
-                home.Show();
-            }
-        }
+      
         public void woods()
         {
             if (wood.Visible && explosion1.Visible && explosion1.Bounds.IntersectsWith(wood.Bounds) || wood.Visible && explosion2.Visible && explosion1.Bounds.IntersectsWith(wood.Bounds) || wood.Visible && explosion3.Visible && explosion3.Bounds.IntersectsWith(wood.Bounds) || wood.Visible && explosion4.Visible && explosion4.Bounds.IntersectsWith(wood.Bounds))
@@ -240,6 +229,7 @@ namespace Dynamite_Guy
                 EnemyTimer2.Stop();
                 EnemyTimer3.Stop();
                 EnemyTimer4.Stop();
+                player.controls.stop();
                 BombTimer.Stop();
                 label2.Visible = true;
                 pictureBox29.Visible = true;
@@ -257,6 +247,7 @@ namespace Dynamite_Guy
                 EnemyTimer2.Start();
                 EnemyTimer3.Start();
                 EnemyTimer4.Start();
+                player.controls.play();
                 label2.Visible = false;
                 pictureBox29.Visible = false;
                 P1.Visible = true;
@@ -324,8 +315,8 @@ namespace Dynamite_Guy
                 bombe1tick = 0;
             }
             bombe1tick++;
-            woods();
-            p1dead();
+            woods();            
+            life();
         }
 
         private void pictureBox26_Click(object sender, EventArgs e)
@@ -406,7 +397,7 @@ namespace Dynamite_Guy
 
             else if (direction == 'd')
             {
-                if (enemy1.Location.Y < (this.Height - 70))
+                if (enemy1.Location.Y < (this.Height - 150))
                 {
                     enemy1.Location = new Point(enemy1.Location.X, enemy1.Location.Y + 5);
                     enemy1.Image = Properties.Resources.down;
@@ -473,7 +464,7 @@ namespace Dynamite_Guy
             {
                 player.controls.play();
 
-                if (enemy2.Location.Y < (this.Height - 70))
+                if (enemy2.Location.Y < (this.Height - 150))
                 {
                     enemy2.Location = new Point(enemy2.Location.X, enemy2.Location.Y + 8);
                     enemy2.Image = Properties.Resources.downRED;
@@ -530,7 +521,7 @@ namespace Dynamite_Guy
             }
             else if (direction2 == 'd')
             {
-                if (enemy3.Location.Y < (this.Height - 80))
+                if (enemy3.Location.Y < (this.Height - 150))
                 {
                     enemy3.Location = new Point(enemy3.Location.X, enemy3.Location.Y + 10);
                     enemy3.Image = Properties.Resources.downEnemy;
@@ -591,7 +582,7 @@ namespace Dynamite_Guy
             }
             else if (direction3 == 'd')
             {
-                if (enemy4.Location.Y < (this.Height - 50))
+                if (enemy4.Location.Y < (this.Height - 150))
                 {
                     enemy4.Location = new Point(enemy4.Location.X, enemy4.Location.Y + 4);
                     enemy4.Image = Properties.Resources.downGREEN;
@@ -671,7 +662,7 @@ namespace Dynamite_Guy
             }
             if (direction4 == 'd')
             {
-                if (enemy5.Location.Y < (this.Height - 90))
+                if (enemy5.Location.Y < (this.Height - 150))
                 {
                     enemy5.Location = new Point(enemy5.Location.X, enemy5.Location.Y + 12);
                     enemy5.Image = Properties.Resources.downBoss;
@@ -901,5 +892,4 @@ namespace Dynamite_Guy
             }
         }
     }
-}
-
+} 

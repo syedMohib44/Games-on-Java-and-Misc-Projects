@@ -48,13 +48,13 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(360, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(148, 290);
+            this.panel3.Size = new System.Drawing.Size(148, 327);
             this.panel3.TabIndex = 16;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Maroon;
-            this.button2.Font = new System.Drawing.Font("Century Schoolbook", 8.25F, System.Drawing.FontStyle.Bold);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button2.Location = new System.Drawing.Point(70, 3);
@@ -98,13 +98,13 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(127, 290);
+            this.panel2.Size = new System.Drawing.Size(127, 327);
             this.panel2.TabIndex = 15;
             // 
             // back
             // 
             this.back.BackColor = System.Drawing.Color.Maroon;
-            this.back.Font = new System.Drawing.Font("Century Schoolbook", 8.25F, System.Drawing.FontStyle.Bold);
+            this.back.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.back.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.back.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.back.Location = new System.Drawing.Point(12, 3);
@@ -123,7 +123,7 @@
             this.label1.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.PapayaWhip;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(147, 59);
+            this.label1.Location = new System.Drawing.Point(148, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 255);
             this.label1.TabIndex = 17;
@@ -135,7 +135,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Dynamite_Guy.Properties.Resources.color_gradient_wallpaper_41;
-            this.ClientSize = new System.Drawing.Size(508, 290);
+            this.ClientSize = new System.Drawing.Size(508, 327);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
