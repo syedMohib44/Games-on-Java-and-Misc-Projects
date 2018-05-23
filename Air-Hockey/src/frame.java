@@ -6,7 +6,7 @@ public class frame{
 	and in OOP we try as hard as could to write lesser code in main method*/
 	public static void main(String[] args)
 	{	
-	menu m = new menu();
+	 menu m = new menu();
 	}
 }
 

@@ -7,6 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -33,7 +36,7 @@ public class movements extends JPanel implements ActionListener, MouseMotionList
 		emy = new Enemy();
 		setSize(1024,800);
 		setLayout(null);
-		timer = new Timer(1000,this);
+		timer = new Timer(100,this);
 		timer.start();			
 		
 		gametimer = new Timer(delay,this);
@@ -65,7 +68,8 @@ public class movements extends JPanel implements ActionListener, MouseMotionList
 		emy.setEnemydirX(-1);
 		emy.setEnemydirY(-2);
 	}
-
+	
+	//This will break line on \n.
 	 private void drawString(Graphics g, String text, int x, int y) {
          for (String line : text.split("\n"))
              g.drawString(line, x, y += g.getFontMetrics().getHeight());
@@ -111,8 +115,9 @@ public class movements extends JPanel implements ActionListener, MouseMotionList
 			time--;
 			if(time == 0)
 			{
+			saveScore();
 			timesUp();
-			}
+		    }
 		}
 		//time++;
 		if(e.getSource() == gametimer)
@@ -183,6 +188,22 @@ public class movements extends JPanel implements ActionListener, MouseMotionList
 			reset();
 		}
 	}	
+	
+	public void saveScore()
+	{
+		FileWriter writefile = null;
+		BufferedWriter writter = null;
+		try {
+			writefile = new FileWriter("Score.txt",true);
+			writter = new BufferedWriter(writefile);
+			writter.newLine();
+			writter.write(Integer.toString( playerscore));
+			writter.close();
+		}
+		catch(Exception e){
+			e.printStackTrace();			
+		}
+	}
 	public void reset()
 	{
 		puc.puckPosX = 742;

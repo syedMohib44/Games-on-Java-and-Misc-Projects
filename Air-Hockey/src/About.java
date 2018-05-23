@@ -44,6 +44,8 @@ public class About extends JFrame implements ActionListener{
 		if(e.getSource() == backbutton)
 		{
 			this.setVisible(false);
+			
+			//This is composition
 			new menu();
 		}
 	}	

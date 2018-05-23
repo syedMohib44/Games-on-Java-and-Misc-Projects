@@ -5,6 +5,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
+//Player class inherits JPanel
 public class Player extends JPanel {
 	private int PlayerX, PlayerY;
 	private Image playerimg;
@@ -12,6 +13,8 @@ public class Player extends JPanel {
 	private int playerscore = 0;
 	public int setplayerscore;
 	
+	
+	//This is Encapsulation 
 	public void setPlayerX(int X)
 	{
 		PlayerX = X;
@@ -48,7 +51,7 @@ public class Player extends JPanel {
 		//playerscore
 		g.setFont(new Font("Arial", Font.BOLD, 28));
 		playerscore = setplayerscore;
-		g.drawString("Score " + playerscore, 700, 610);
+		g.drawString("Player: " + playerscore, 700, 610);
 	}
 	public void restrictArea()
 	{

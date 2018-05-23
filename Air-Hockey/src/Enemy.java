@@ -11,7 +11,6 @@ public class Enemy extends JPanel{
 	private int enemyPosX = 650,enemyPosY = 220, enemyXdir = -1, enemyYdir = -2;
 	private Image enemyimg;
 	private ImageIcon enemy;	
-	private boolean enemymov = false;   
 	private int enemyscore = 0;
 	public int setenemyscore;
 	
@@ -71,7 +70,7 @@ public class Enemy extends JPanel{
 		//enemyscore
 		g.setFont(new Font("Arial", Font.BOLD, 28));
 		enemyscore = setenemyscore;
-		g.drawString("Score " + enemyscore, 700, 190);
+		g.drawString("CPU: " + enemyscore, 700, 190);
 	}
 	
 	/*This works same as Puck. There are two ways to move your enemy see which seems easy to you 
