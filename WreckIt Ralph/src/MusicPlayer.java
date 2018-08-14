@@ -14,7 +14,7 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 public class MusicPlayer{
 	
 	private ArrayList<String> musicFiles;
-	private int musicTimer;
+	private int musicTimer, musicCurrentIndex = 0;
 	File audioFile;
 	AudioInputStream ais;
 	AudioFormat formate;
@@ -38,6 +38,8 @@ public class MusicPlayer{
 			clip.open(ais);
 			gainControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
 			gainControl.setValue(-10);
+			if(audioFileName == "death.wav")
+				gainControl.setValue(0);
 			clip.start();			
 			}
 		} catch (UnsupportedAudioFileException | IOException e) {
@@ -49,7 +51,7 @@ public class MusicPlayer{
 	
 	public void run(int musicTimer) {
 		this.musicTimer = musicTimer;
-		music(musicFiles.get(0));
+		music(musicFiles.get(musicCurrentIndex));
 	}
 
 }

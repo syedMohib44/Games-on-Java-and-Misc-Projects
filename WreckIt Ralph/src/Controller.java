@@ -22,9 +22,10 @@ public class Controller {
 	private int score = 0;
 	private movements player;
 	private boolean isdead;
-	
+	MusicPlayer mp;
 	public Controller(movements player) {
 		this.player = player;
+		mp = new MusicPlayer("death.wav");
 		addEnemy(new enemies(775, 780));
 		addEnemy(new enemies(900, 780));
 		addEnemy(new enemies(1050, 780));
@@ -73,6 +74,7 @@ public class Controller {
 				
 			else if((player.getBoundsRight().intersects(tempEnemy.enemyBounds()) || player.getBoundsLeft().intersects(tempEnemy.enemyBounds()))){
 					player.setPlayerDeath(true);
+					mp.run(1);
 					System.out.println("Player is dead");
 				}
 				

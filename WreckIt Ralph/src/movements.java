@@ -7,7 +7,7 @@ import java.io.FileWriter;
 public class movements {
 	
 	protected int playerPosX, playerPosY;
-	protected int playerWidth = 50, playerHeigth = 60;
+	protected int playerWidth = 50, playerHeigth = 60, jumpCount = 0;
 	protected boolean iscollied = false, playerIsDead = false;
 	protected boolean jumping = false, falling = false, left = false, right = false, grab = false, grableft = false;
 	protected double gravity = 0, maxY = 4, velX = 1, velY = 2;
@@ -16,6 +16,7 @@ public class movements {
 	public movements(Collisions c)
 	{
 		this.c = c;
+		mp = new MusicPlayer("jumpAudio.wav");
 	}
 	
 	public void setPlayerDeath(boolean playerIsDead) {
@@ -86,6 +87,7 @@ public class movements {
 		
 		if(e.getKeyCode() == KeyEvent.VK_UP && jumping == false)			
 		{			
+			mp.run(1);
 			jumping = true;		
 				if(e.getKeyCode() == KeyEvent.VK_UP && c.StairsCollision(playerPosX, playerPosY, velX, velY))
 				{
