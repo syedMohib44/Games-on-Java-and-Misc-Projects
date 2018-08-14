@@ -356,8 +356,10 @@ public class gamescreen extends JPanel implements KeyListener, ActionListener{
 	
 	public void keyPressed(KeyEvent e) {
 		
-		if(state == STATE.GAME)
+		if(state == STATE.GAME) {
 			m.playerMov(e);
+			Menu.HighScroe();
+		}
 	}
 
 	@Override

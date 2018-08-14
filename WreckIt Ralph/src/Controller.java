@@ -77,9 +77,10 @@ public class Controller {
 				}
 				
 				if(tempEnemy.getDeath() == true) {
-					score = tempEnemy.getScore();
 					player.setPlayerDeath(false);
 					tempEnemy.deathAnim();
+					score++;
+					saveScore(score);
 					}
 				if(tempEnemy.getenemiesPosX() < -20) {
 					tempEnemy.setenemiesPosX(1050);
@@ -87,11 +88,12 @@ public class Controller {
 				}
 				} 
 		}
+	
 	public void addEnemy(enemies enemy) {
 			e.add(enemy);
 	}
 	
-	public void saveScore() {
+	public void saveScore(int score) {
 		FileWriter writeFile = null;
 		BufferedWriter writer = null;
 		

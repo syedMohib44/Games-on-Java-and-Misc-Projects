@@ -14,7 +14,6 @@ public class enemies extends JPanel {
 	protected int enemiesVelX, enemiesVelY;
 	String path = "enemies/";
 	public int totalframe = 0, deathCount = 0;
-	private int score = 0;
 	public boolean enemyIsDead = false;
 	MusicPlayer mp;
 	
@@ -93,9 +92,7 @@ public class enemies extends JPanel {
 		totalframe++;
 	}
 	
-	public int getScore() {
-		return score;
-	}
+	
 	public void deathAnim() {
 		
 		if(getDeath() == true) {
@@ -107,9 +104,9 @@ public class enemies extends JPanel {
 		}
 		if(deathCount == 1) {
 			mp.run(1);
-			score++;
 		}
 		else if (deathCount >= 50) {
+			//score++;
 			enemiesPosX = 850;
 			setDeath(false);
 		}
@@ -117,26 +114,12 @@ public class enemies extends JPanel {
 			reset();
 		}
 	}
+	
 	public void reset() {
 		enemiesPosX = 880;
 	    enemiesPosY = 775;
 		setenemiesVelX(2);
 		deathCount = 0;
 		path = "enemies/";
-	}
-	
-	public void saveScore() {
-		FileWriter writeFile = null;
-		BufferedWriter writer = null;
-		
-		try {
-			writeFile = new FileWriter("score.txt");
-			writer = new BufferedWriter(writeFile);
-			writer.newLine();
-			writer.write(Integer.toString(score));
-			writer.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 }
